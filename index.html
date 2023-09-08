@@ -5,37 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <div class="search-bar"></div>
-        <div class="header-info"></div>
-    </div>
-
-    <div class="sidebar">
-        <div class="dashboard-logo"></div>
-        <div class="dashboard-content">
-            <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
-            </ul>
-
-            <ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
-            </ul>
+    <div class="wrapper">
+        <div class="header">
+            <div class="search-bar">
+                <img class="icon" src="./images/magnify.svg">
+                <input type="search">
+                <span>
+                    <img class="icon" src="./images/bell-ring.svg">
+                    <img class="admin-img" src="./images/admin-img.jpg">
+                    <p>Taha Duman</p>
+                </span>
+            </div>
+            <div class="header-info">
+                <span id="header-info-left">
+                    <img class="admin-img-info" src="./images/admin-img.jpg">
+                    <span>
+                        <h4>Hi there,</h4>
+                        <h2>Taha Duman (@taha)</h2>
+                    </span>
+                    
+                </span>
+                <span id="header-info-right">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </span>
+            </div>
         </div>
-    </div>
 
-    <div class="main">
-        <div class="your-projects"></div>
-        <div class="announcements"></div>
-        <div class="trending"></div>
+        <div class="sidebar">
+            <div class="dashboard-logo">
+                <img src="images/view-dashboard.svg">
+                <h2>DASHBOARD</h2>
+            </div>
+            <div class="dashboard-content">
+                <ul>
+                    <li> 
+                        <img src="images/home.svg" class="icon-white"> 
+                        <p>Home</p>
+                    </li>
+                    <li> 
+                        <img src="images/card-account-details-outline.svg" class="icon-white"> 
+                        <p>Profile</p>
+                    </li>
+                    <li> 
+                        <img src="images/message.svg" class="icon-white"> 
+                        <p>Messages</p>
+                    </li>
+                    <li> <img src="images/history.svg" class="icon-white"> 
+                        <p>History</p>
+                    </li>
+                    <li> 
+                        <img src="images/calendar-check.svg" class="icon-white"> 
+                        <p>Tasks</p>
+                    </li>
+                    <li> 
+                        <img src="images/account-group.svg" class="icon-white"> 
+                        <p>Communities</p>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <img src="images/cog.svg" class="icon-white"> 
+                        <p>Settings</p>
+                    </li>
+                    <li>
+                        <img src="images/help-box.svg" class="icon-white"> 
+                        <p>Support</p>
+                    </li>
+                    <li>
+                        <img src="images/shield-alert-outline.svg" class="icon-white"> 
+                        <p>Privacy</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="your-projects">
+                <h2>Your Projects</h2>
+                <div class="projects">
+                    <div class="project">
+                        <div>
+                            <h3>Super Cool Project</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolore beatae dignissimos odit illo! Laudantium.</p>
+                        </div>
+                        <div>
+                            <img src="./images/star-plus-outline.svg" class="icon">
+                            <img src="./images/eye-plus.svg" class="icon">
+                            <img src="./images/code-braces.svg" class="icon">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div>
+                            <h3>Another Cool Project</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolore beatae dignissimos odit illo! Laudantium.</p>
+                        </div>
+                        <div>
+                            <img src="./images/star-plus-outline.svg" class="icon">
+                            <img src="./images/eye-plus.svg" class="icon">
+                            <img src="./images/code-braces.svg" class="icon">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div>
+                            <h3>Adblock</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id soluta, quam cum quidem corporis molestias!</p>
+                        </div>
+                        <div>
+                            <img src="./images/star-plus-outline.svg" class="icon">
+                            <img src="./images/eye-plus.svg" class="icon">
+                            <img src="./images/code-braces.svg" class="icon">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div>
+                            <h3>Crypto Wallter</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatum optio accusamus minus praesentium reiciendis? Amet ut accusantium recusandae soluta.</p>
+                        </div>
+                        <div>
+                            <img src="./images/star-plus-outline.svg" class="icon">
+                            <img src="./images/eye-plus.svg" class="icon">
+                            <img src="./images/code-braces.svg" class="icon">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div>
+                            <h3>Calculator</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id soluta, quam cum quidem corporis molestias!</p>
+                        </div>
+                        <div>
+                            <img src="./images/star-plus-outline.svg" class="icon">
+                            <img src="./images/eye-plus.svg" class="icon">
+                            <img src="./images/code-braces.svg" class="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="announcements">
+                <h2>Announcements</h2>
+            </div>
+            <div class="trending">
+                <h2>Trending</h2>
+            </div>
+        </div>
     </div>
 </body>
 </html>
