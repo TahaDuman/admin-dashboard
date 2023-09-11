@@ -136,13 +136,13 @@
 
   .main{
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: 3fr 2fr;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
     padding: 1rem;
   }
   .your-projects{
     grid-column: 1;
-    grid-row: 1 / 4;
+    grid-row: 1 / 5;
   }
 
   .projects{
@@ -175,9 +175,33 @@
     border-radius: 15px;
   }
   .announcement{
-    
+    margin-bottom: 15px;
   }
-  .announcement > span{
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    
+
+  .h_line {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin-top: 6px;
+}
+
+  .trending{
+    margin: 10;
+    padding: 15px;
+  }
+
+  .trending > div{
+    background-color: var(--second-bg-color);
+    border-radius: 15px;
+
+  }
+  
+  .trend-project{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    cursor: pointer;
+  }
+  .trend-project > div > p:nth-child(2){
+    margin-top: 3px;
   }
